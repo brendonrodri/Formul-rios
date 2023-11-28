@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+      <!--Serve para definir o idioma da linguagem-->
+      <meta charset="UTF-8" />
+      <title> Aula de Formulários </title>
+      <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+      <header></header>
+      <main>
+            <form class="formulario">
+            <!--Label = etiqueta, tem o papel de dar uma legenda para o input-->
+            <label class="formulario-label" for="nome">Nome:</label>
+            <!--Input do tipo texto-->
+            <input class="input-form" id="nome" type="text" value="Batata"/>
+             
+            <label for="email">Email:</label>
+            <!--Input do tipo email-->
+            <input class="input-form" id="email" type="email" />
+            <!--Input do tipo senha-->
+            <label for="senha">Senha:</label>
+            <input class="input-form" id="senha" type="password" />
+
+            <label for="data">Data: </label>
+            <input class="input-form" type="date"/>
+
+            <label for="hora">Hora: </label>
+            <input type="time" class="input-form" />
+
+            <label>Estado:</label>
+            <select id="estado" name="estado">
+                <option value="rj">RJ</option>
+                <option value="sp">SP</option>
+                <option value="mg"> MG</option>
+            </select>
+
+            <label for="termos">Aceita os termos?</label>
+            <div class="checkbox-container">
+                <div class="checkbox-div">
+                    <label>Sim</label>
+                    <input class="checkbox" type="checkbox" value="sim" name="termos" />
+                </div>
+                <div class="checkbox-div">
+                    <label>Não</label>
+                    <input class="checkbox" type="checkbox" value="nao" name="termos" />
+                </div>
+            </div>
+
+            <label for="newlestter">
+                Newlestter
+            </label>
+            <div class="checkbox-container">
+                <input class="checkbox" type="radio" value="sim" name="newlestter" />
+                <input class="checkbox" type="radio" value="nao" name="newlestter" />
+                <input class="checkbox" type="radio" value="nao" name="newlestter" />
+                <input class="checkbox" type="radio" value="nao" name="newlestter" />
+            </div>
+            <input class="form-button" type="button" value="Enviar dados" />           
+            <input class="form-button" type="submit" value="Enviar para o servidor" />
+        </form>
+        
+      </main>
+      <footer> </footer>
+  </body>
+</html>
